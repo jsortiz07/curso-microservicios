@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class MotoServiceApplication {
 
 	public static void main(String[] args) {
-		System.setProperty("server-port", "8003");
+		//System.setProperty("server-port", "8003");
 		SpringApplication.run(MotoServiceApplication.class, args);
 	}
 
