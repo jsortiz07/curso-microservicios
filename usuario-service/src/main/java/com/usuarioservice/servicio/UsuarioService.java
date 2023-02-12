@@ -57,6 +57,9 @@ public class UsuarioService {
 			return motos;
 		}
 		
+		
+		// utilizando OpenFeign
+		
 		public Carro saveCarro(int usuarioId, Carro carro) {
 			carro.setUsuarioId(usuarioId);
 			Carro nuevoCarro = carroFeignClient.save(carro);

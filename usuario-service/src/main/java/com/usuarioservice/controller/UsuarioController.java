@@ -50,6 +50,7 @@ public class UsuarioController {
 		return ResponseEntity.ok(usuarioNew);
 	}
 	
+	//listar carros asociados a un usuarioId
 	@GetMapping("/carros/{usuarioId}")
 	
 	public ResponseEntity<List<Carro>> listarCarros(@PathVariable("usuarioId") int usuarioId){
@@ -64,6 +65,8 @@ public class UsuarioController {
 		
 		return ResponseEntity.ok(carros);
 	}
+	
+	//listar motos asociados a un usuarioId
 	
 	@GetMapping("/motos/{usuarioId}")
 	
